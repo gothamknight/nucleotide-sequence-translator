@@ -1,0 +1,463 @@
+* {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+body {
+  min-width: 560px;
+  min-height: 100vh;
+  background-color: #141d28;
+}
+
+a, a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: #141d28;
+}
+
+button:focus {
+  outline: none;
+}
+
+/*--VARIABLES--*/
+/*--MIXINS--*/
+/*--NAVBAR--*/
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  min-height: 100vh;
+  background-color: #1b242f;
+  z-index: 9999;
+  border-right: solid 2px #e31b6d;
+}
+
+.outer {
+  display: flex;
+  flex-wrap: wrap;
+  color: #878787;
+  cursor: pointer;
+  border-bottom: 1px solid #1b242f;
+  background-color: #1b242f;
+}
+.outer:hover {
+  background-color: #141d28;
+  color: #e31b6d;
+}
+
+.ion {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-text {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  width: 0px;
+  overflow: hidden;
+}
+
+/*--NAV LINKS--*/
+.nav-link-title-div {
+  background-color: #141d28;
+  color: gainsboro;
+}
+
+.nav-link-title {
+  font-weight: 200;
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
+  padding: 30px 30px 30px 90px;
+  margin-bottom: 0px;
+}
+
+.nav-link-sub-title {
+  font-weight: 200;
+  font-size: 24px;
+}
+
+#documentation, #website-info, #amino-acids {
+  border-right: solid 2px #e31b6d;
+  height: 100vh;
+  width: 550px;
+  overflow: auto;
+  position: fixed;
+  display: none;
+  z-index: 100;
+}
+
+#doc-body-div, #web-info-body-div, #amino-body-div {
+  padding: 0px 30px 30px 90px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.doc-details-div {
+  width: 450px;
+  padding-top: 20px;
+  text-align: justify;
+  color: #141d28;
+}
+
+/*--WEBSITE INFORMATION--*/
+.web-info-details-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #141d28;
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+}
+
+.devicon-div {
+  display: inline-block;
+  padding-bottom: 0px;
+  margin-left: 12px;
+}
+
+.ion-ionic, .colored {
+  font-size: 75px;
+  height: 75px;
+  width: 75px;
+}
+
+.devicon-div p {
+  font-family: Helvetica;
+  /*?*/
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#web-dev-title {
+  font-weight: 200;
+  padding: 30px 30px 30px 90px;
+  margin-bottom: 0px;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-top: #141d28 2px solid;
+}
+
+#contact {
+  padding: 0px 30px 30px 90px;
+  background-color: white;
+  color: #141d28;
+}
+
+#my-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 15px;
+  color: black;
+  background-color: white;
+}
+
+.profile-link {
+  display: inline-block;
+}
+
+/*-AMINO ACIDS--*/
+#amino-acids {
+  display: none;
+  width: 100vw;
+  background-color: white;
+}
+
+#amino-body-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aa-card {
+  margin: 20px 10px;
+  border: 2px solid #1b242f;
+  width: 304px;
+  min-width: 304px;
+  text-align: center;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: 24px;
+  display: inline-block;
+  padding: 10px;
+  float: left;
+  color: white;
+  background-color: #1b242f;
+}
+
+.red {
+  padding-left: 10px;
+  color: black;
+  background: red;
+  background: -webkit-linear-gradient(right top, red, white);
+  background: -o-linear-gradient(bottom left, red, white);
+  background: -moz-linear-gradient(bottom left, red, white);
+  background: linear-gradient(to bottom left, red, white);
+}
+
+.blue {
+  padding-left: 10px;
+  color: black;
+  background: blue;
+  background: -webkit-linear-gradient(right top, blue, white);
+  background: -o-linear-gradient(bottom left, blue, white);
+  background: -moz-linear-gradient(bottom left, blue, white);
+  background: linear-gradient(to bottom left, blue, white);
+}
+
+.gray {
+  padding-left: 10px;
+  color: black;
+  background: gray;
+  background: -webkit-linear-gradient(right top, gray, white);
+  background: -o-linear-gradient(bottom left, gray, white);
+  background: -moz-linear-gradient(bottom left, gray, white);
+  background: linear-gradient(to bottom left, gray, white);
+}
+
+.green {
+  padding-left: 10px;
+  color: black;
+  background: green;
+  background: -webkit-linear-gradient(right top, green, white);
+  background: -o-linear-gradient(bottom left, green, white);
+  background: -moz-linear-gradient(bottom left, green, white);
+  background: linear-gradient(to bottom left, green, white);
+}
+
+/*--MAIN PAGE--*/
+header {
+  text-align: center;
+  padding: 30px 30px 30px 90px;
+  background-color: #141d28;
+  margin-bottom: 0px;
+}
+
+#title {
+  font-weight: 100;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  padding-bottom: 10px;
+}
+
+#main-page-div {
+  background-color: #141d28;
+  padding: 30px 80px 30px 140px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.section {
+  max-width: 700px;
+  margin: auto;
+}
+
+.input-output {
+  font-size: 30px;
+}
+
+.holds-btns-and-txtarea-div, .holds-btns-and-output-div {
+  padding: 10px 20px;
+}
+
+.btns-div {
+  width: 142px;
+  margin-right: 20px;
+  display: inline-block;
+  float: left;
+}
+
+.select-btn {
+  width: 140px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #04c2c9;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: ease 0.6s all;
+}
+.select-btn:hover {
+  background-color: #04c2c9;
+  cursor: pointer;
+}
+
+.input-txtarea-div {
+  width: 494px;
+  display: inline-block;
+}
+
+#input-txtarea {
+  width: 100%;
+  min-height: 200px;
+  background-color: #1b242f;
+  color: white;
+}
+
+#convert-btn-div, #reset-btn-div {
+  padding: 10px 20px;
+  height: 20px;
+}
+
+#convert-btn {
+  width: 140px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #33cc33;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: ease 0.6s all;
+  position: relative;
+  bottom: 62px;
+}
+#convert-btn:hover {
+  background-color: #33cc33;
+  cursor: pointer;
+}
+
+#aa-btns-div {
+  width: 142px;
+  margin-right: 20px;
+  display: inline-block;
+  float: left;
+  background-color: #141d28;
+}
+
+#output-div {
+  width: 494px;
+  background-color: #1b242f;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid darkgray;
+  padding-top: 5px;
+}
+
+#reset-btn {
+  width: 140px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #ff1a1a;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: ease 0.6s all;
+  position: relative;
+  bottom: 55px;
+}
+#reset-btn:hover {
+  background-color: #ff1a1a;
+  cursor: pointer;
+}
+
+#cp {
+  font-size: 1rem;
+  font-weight: 100;
+  color: darkgray;
+  text-align: center;
+}
+
+/*--MEDIA QUERIES--*/
+@media only screen and (max-width: 942px) {
+  .section {
+    max-width: 560px;
+  }
+
+  .btns-div {
+    width: 302px;
+    text-align: left;
+    margin-right: 0px;
+  }
+
+  #dna-btn {
+    margin-right: 15px;
+  }
+
+  .input-txtarea-div {
+    width: 100%;
+    margin-bottom: 7px;
+    display: inline-block;
+    position: static;
+  }
+
+  #convert-btn-div {
+    text-align: center;
+    padding: 0px 20px;
+    height: auto;
+  }
+
+  #convert-btn {
+    position: static;
+  }
+
+  #aa-btns-div {
+    width: 100%;
+    margin-right: 0px;
+    border-bottom: 1px solid darkgray;
+  }
+
+  #fullaa-btn, #Threeaa-btn {
+    margin-right: 15px;
+  }
+
+  #output-div {
+    margin: 7px 0px;
+    display: block;
+    position: static;
+    width: 100%;
+  }
+
+  #reset-btn-div {
+    text-align: center;
+    padding: 0px 20px;
+    height: auto;
+  }
+
+  #reset-btn {
+    position: static;
+  }
+}
+@media only screen and (max-width: 820px) {
+  #amino-acids {
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .holds-btns-and-output-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aa-btns-div {
+    width: 142px;
+    margin: auto;
+    display: block;
+    border-bottom: 1px solid transparent;
+  }
+
+  #output-div {
+    display: block;
+    margin-top: 0px;
+  }
+}
