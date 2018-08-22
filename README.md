@@ -1,3 +1,3 @@
-# nucleotide-sequence-translator
+# nucleotide sequence translator
 
-link: https://user-ap.github.io/nucleotide-sequence-translator/
+https://iso1048.github.io/nucleotide-sequence-translator/
